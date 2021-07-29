@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in Latex
+% Author : Sriraj Behera
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+% \documentclass{scrartcl}
+
+% \usepackage{fontawesome}
+\usepackage{ifsym}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \text{\small#3} & \text{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape SRIRAJ BEHERA} \\ \vspace{2pt}
+    % \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-7021249264~
+    % \address{\textifsymbol{18} Navi Mumbai, Maharashtra, India} ~
+    \href{mailto:behera.sriraj2911@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{behera.sriraj2911@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/sriraj-behera-730b23201/}{\raisebox{-0.2\height}\faLinkedin\ \underline{SrirajBehera}}  ~
+    \href{https://github.com/SrirajBehera}{\raisebox{-0.2\height}\faGithub\ \underline{SrirajBehera}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The LNM Institute of Information Technology}{2020 -- 2024} 
+      {Bachelor of Technology (B. Tech.) in Computer Science and Engineering - 8.36 CGPA}{Jaipur, Rajasthan, India}
+  \resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Training and Placement Cell, LNMIIT}{June 2021 -- Present}
+      {Member}{Jaipur, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Responsible for managing smooth operations during Placement Season and conducting mock drives for all the students of LNMIIT.}
+        % \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+        % \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+        % \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Startup, Inc}{May 2019 -- August 2019}
+    %   {Front End Developer Intern}{City, State}
+    %   \resumeItemListStart
+    %     \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+    %     \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+    %     \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+    %     \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    % \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\underline{\textbf{\href{https://github.com/SrirajBehera/WhatsApp-Clone-Android-App}{WhatsApp Clone Android App}}} $|$ {Android, Java, Firebase}}{April 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a simple and efficient social messenger app which allows user to send and receive text messages and images in a public group and in a private personal space all in real-time.}
+            \resumeItem{Designed and developed using Android Studio.}
+            \resumeItem{Developed in Native Environment using XML for UI and Java for backend with integration of Firebase as Backend-as-a-Service (Baas) for User Authentication, Database Management and Cloud Messaging.}
+            % \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\underline{\textbf{\href{https://github.com/SrirajBehera/Ethereum-ERC-20-CryptoCurrency-Exchange-DApp}{Ethereum ERC-20 Cryptocurrency Exchange DApp}}} $|$ {Blockchain, Solidity, JavaScript}}{February 2021}
+          \resumeItemListStart
+            \resumeItem{Built a Decentralized Web App which allows user to instantly exchange Ethereum with other cryptocurrency (self-made ERC-20 Token type) at a fixed exchange rate.}
+            \resumeItem{Transactions are made permanent into the Blockchain using Ganache and deploying Smart Contracts over the Blockchain.}
+            \resumeItem{Technologies used are React.js for Frontend, Solidity programming language to create Smart Contracts and Truffle Suite of Ganache for local Blockchain Environment.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\underline{\textbf{\href{https://github.com/SrirajBehera/iChatApp}{iChatApp}}} $|$ {HTML/CSS, javaScript, Node.js, Socket.IO}}{June 2020}
+          \resumeItemListStart
+            \resumeItem{This is a Real-time Web Chatting application made using Node.js and Socket.IO.}
+            \resumeItem{Developed the Frontend using HTML, CSS and JavaScript and Node.js and Socket.IO (a JavaScript Library for bi-directional communication between web clients and server) for backend.}
+            \resumeItem{Deployed and hosted the website in an Ubuntu 18.04 Virtual Private Server with Website Domain and free SSL Encryption.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ \hfill Python, Java, C/C++, HTML/CSS, JavaScript} \\
+     \textbf{Lib/Frameworks:}{ \hfill Node.js, React.js, React-Native} \\
+     \textbf{Developer Tools:}{ \hfill VS Code, Android Studio, Firebase} \\
+     \textbf{Database:}{ \hfill MongoDB} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------Coding Profile---------------
+\section{CODING PROFILES}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small \href{https://www.codechef.com/users/sriraj_2911}{\underline{CodeChef}}
+                \item \href{https://codeforces.com/profile/SrirajBehera}{\underline{Codeforces}}
+                \item \href{https://leetcode.com/SrirajBehera/}{\underline{Leetcode}}
+                \item \href{https://www.hackerrank.com/behera_sriraj291}{\underline{HackerRank}}
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+        \vspace{5pt}
+    %\resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS---------------
+\section{ACHIEVEMENTS}
+    \resumeSubHeadingListStart
+    %     \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+            \resumeItemListStart
+                \resumeItem{Secured a Global Rank of 1938 in CodeChef Long Challenge among 28000+ participants worldwide.}
+                \resumeItem{Secured All India Rank of 28361 out of 1.1 Million candidates in JEE Mains 2020.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
